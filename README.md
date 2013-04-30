@@ -30,8 +30,9 @@ And by doing so, your users will know easily how to use your plugins.
 How to use a jTropiq plugin ?
 --------
 
-You like using the jQuery plugins ? mee too !  
-If it is a jTropiq plugin you can use it either with jQuery (~32kB) or jTropiq (~0.5kB). 
+You like to use a jQuery plugin ? mee too !  
+If it is a jTropiq plugin you can use it either with jQuery (~32kB) or with jTropiq (~0.5kB).  
+It is as simple if you use jQuery or not, so don't be afraid of jTropiq plugins.
 
 ### With jTropiq
 ```html
