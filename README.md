@@ -1,7 +1,7 @@
 jTropiq
 =======
 
-*Great vanilla grow in the tropiq*
+*Great vanilla grows in the tropiq*
 
 jTropiq is a fork of jQuery, but only the plugin system was kept.  
 It allows to make vanillaJS plugins available for the jQuery community.
