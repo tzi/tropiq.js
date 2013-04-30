@@ -1,8 +1,3 @@
-/*
- Social Bookmarks
- mlb.li
- */
-
 ;(function($){
 
     $.fn.popup = function() {
