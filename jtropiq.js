@@ -7,7 +7,7 @@ function jTropiq( elements ) {
 
 // Definition of the jTropiq object
 jTropiq.fn = jTropiq.prototype = {
-    init: function jTropiqArray( elements ) {
+    init: function( elements ) {
         this.length = 0;
         if ( elements ) {
             if ( elements.nodeType ) {
@@ -25,18 +25,11 @@ jTropiq.fn = jTropiq.prototype = {
     toArray: function( ) {
         return [].slice(this);
     },
-    get: function( num ) {
-        return num == null ? this.toArray() : ( num < 0 ? this[ this.length + num ] : this[ num ] );
-    },
     each: function( callback ) {
-        var value,
-            i = 0,
+        var i = 0,
             length = this.length;
         for (; i<length; i++) {
-            value = callback.call( this[ i ], i, this[ i ] );
-            if ( value === false ) {
-                break;
-            }
+            callback.call( this[ i ], i, this[ i ] );
         }
         return this;
     }
