@@ -7,10 +7,10 @@ jTropiq is a fork of jQuery, but only the plugin system was kept.
 It allows to make vanillaJS plugins available for the jQuery community.
 
 
-Why develop a jTropiq plugin ?
+Why develop a jTropiq plugin?
 --------
 
-You like to write vanillaJS ? mee too !  
+You like to write vanillaJS? mee too!  
 With jTropiq (~0.5kB) you can write a plugin in vanillaJS and made it also working with jQuery.  
 And by doing so, your users will know easily how to use your plugins.
 
@@ -28,10 +28,10 @@ And by doing so, your users will know easily how to use your plugins.
 ```
 
 
-How to use a jTropiq plugin ?
+How to use a jTropiq plugin?
 --------
 
-You like to use a jQuery plugin ? mee too !  
+You like to use a jQuery plugin? mee too!  
 If it is a jTropiq plugin you can use it either with jQuery (~32kB) or with jTropiq (~0.5kB).  
 It is as simple if you use jQuery or not, so don't be afraid of jTropiq plugins.
 
