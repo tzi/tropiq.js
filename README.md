@@ -23,6 +23,7 @@ And by doing so, your users will know easily how to use your plugins.
       // Vanilla code for every HTML elements
     })
   }
+  return this;
 })(window.jQuery||window.jTropiq)
 ```
 
