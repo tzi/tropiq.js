@@ -10,8 +10,9 @@ It allows to make vanillaJS plugins available for the jQuery community.
 Why develop a jTropiq plugin ?
 --------
 
-You like write vanillaJS ? mee too !  
-With jTropiq (~0.5kB) you can write a plugin in vanillaJS and made it also working with jQuery. 
+You like to write vanillaJS ? mee too !  
+With jTropiq (~0.5kB) you can write a plugin in vanillaJS and made it also working with jQuery.  
+And by doing so, your users will know easily how to use your plugins.
 
 ```js
 // Basic structure of a jTropiq plugin
