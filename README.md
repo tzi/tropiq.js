@@ -1,18 +1,29 @@
 jTropiq
 =======
 
-*Great vanilla grows in the tropiq*
-
-jTropiq is a fork of jQuery, but only the plugin system was kept.  
-It allows to make vanillaJS plugins available for the jQuery community.
+jTropiq is the jQuery plugin system, without jQuery.
 
 
-Why develop a jTropiq plugin?
+Why jTropiq
 --------
 
-You like to write vanillaJS? mee too!  
-With jTropiq (~0.5kB) you can write a plugin in vanillaJS and made it also working with jQuery.  
+* The jTropiq size is ~0.5kB while jQuery is ~32kB.
+* To promote vanillaJS
+* To provide plugins with an expectable usage
+
+
+To develop jTropiq plugins
+--------
+
+### Why should you develop jTropiq plugins?
+
+You like to write vanillaJS? mee too!
+By packaging your plugins for jTropiq, you will provide vanillaJS plugins compatible with jQuery.
 And by doing so, your users will know easily how to use your plugins.
+
+### How can you develop jTropiq plugins?
+
+By following the following pattern
 
 ```js
 // Basic structure of a jTropiq plugin
@@ -31,17 +42,23 @@ And by doing so, your users will know easily how to use your plugins.
 How to use a jTropiq plugin?
 --------
 
-You like to use a jQuery plugin? mee too!  
+You like to use a jQuery plugins? mee too!
 If it is a jTropiq plugin you can use it either with jQuery (~32kB) or with jTropiq (~0.5kB).  
-It is as simple if you use jQuery or not, so don't be afraid of jTropiq plugins.
+Don't be afraid of jTropiq plugins, it is not harder than jQuery.
 
 ### With jTropiq
 ```html
 <script src="path/to/jtropiq.js"></script>
 <script src="path/to/myPlugin-jtropiq.js"></script>
 <script>
-  // Basic usage of a jTropiq plugin: you need to query elements in vanillaJS
+
+  // Basic usage of a jTropiq plugin: you need to query elements with vanillaJS
+  $(document.getElementById('#widgetId')).myPlugin(options);
+  $(document.getElementsByClassName('myWidgetClass')).myPlugin(options);
   $(document.querySelectorAll('.myWidgetClass')).myPlugin(options);
+
+  // String selector is an alias of "document.querySelectorAll", be aware of his IE8+ compatibility
+  $('.myWidgetClass').myPlugin(options);
 </script>
 ```
 
@@ -50,7 +67,7 @@ It is as simple if you use jQuery or not, so don't be afraid of jTropiq plugins.
 <script src="path/to/jquery.js"></script>
 <script src="path/to/myPlugin-jtropiq.js"></script>
 <script>
-  // You can query elements in vanillaJS or use string selector
+  // You can query elements with vanillaJS or with jQuery selector
   $('.myWidgetClass').myPlugin(options);
 </script>
 ```
