@@ -17,8 +17,8 @@ To develop jTropiq plugins
 
 ### Why should you develop jTropiq plugins?
 
-You like to write vanillaJS? mee too!
-By packaging your plugins for jTropiq, you will provide vanillaJS plugins compatible with jQuery.
+You like to write vanillaJS? mee too!<br>
+By packaging your plugins for jTropiq, you will provide vanillaJS plugins compatible with jQuery.<br>
 And by doing so, your users will know easily how to use your plugins.
 
 ### How can you develop jTropiq plugins?
@@ -42,8 +42,8 @@ By following the following pattern
 How to use a jTropiq plugin?
 --------
 
-You like to use a jQuery plugins? mee too!
-If it is a jTropiq plugin you can use it either with jQuery (~32kB) or with jTropiq (~0.5kB).  
+You like to use a jQuery plugins? mee too!<br>
+If it is a jTropiq plugin you can use it either with jQuery or with jTropiq.<br>
 Don't be afraid of jTropiq plugins, it is not harder than jQuery.
 
 ### With jTropiq
@@ -68,6 +68,7 @@ Don't be afraid of jTropiq plugins, it is not harder than jQuery.
 <script src="path/to/myPlugin-jtropiq.js"></script>
 <script>
   // You can query elements with vanillaJS or with jQuery selector
+  $(document.getElementById('#widgetId')).myPlugin(options);
   $('.myWidgetClass').myPlugin(options);
 </script>
 ```
