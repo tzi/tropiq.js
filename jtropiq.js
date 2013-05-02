@@ -12,8 +12,9 @@ jTropiq.fn = jTropiq.prototype = {
         if ( elements ) {
             if ( elements.nodeType ) {
                 this[this.length++] = elements;
-            }
-            else if ( elements.length ) {
+            } else if ( typeof elements == 'string') {
+              this.init(document.querySelectorAll(elements));
+            } else if ( elements.length ) {
                 var i = 0,
                     length = elements.length;
                 for (; i<length; i++) {
@@ -23,7 +24,7 @@ jTropiq.fn = jTropiq.prototype = {
         }
     },
     toArray: function( ) {
-        return [].slice(this);
+        return Array.prototype.slice.call(this);
     },
     each: function( callback ) {
         var i = 0,
