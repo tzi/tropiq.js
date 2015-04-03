@@ -1,26 +1,20 @@
 {
-  "name": "iakaa",
+  "name": "tropiq.js",
   "version": "1.0.0",
-  "description": "Iakaa website",
-  "main": "index.js",
+  "description": "tropiq.js is the jQuery plugin system, without jQuery.",
+  "main": "tropiq.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git@bitbucket.org:iakaa/website.git"
+    "url": "git@github.com:tzi/tropiq.js.git"
   },
-  "author": "Iakaa",
-  "license": "Copyright",
+  "author": "Thomas ZILLIOX",
+  "license": "MIT",
   "devDependencies": {
     "gulp": "^3.8.10",
-    "gulp-autoprefixer": "^1.0.1",
-    "gulp-concat": "^2.4.1",
-    "gulp-freeze": "0.0.1",
-    "gulp-minify-css": "^0.3.11",
-    "gulp-rename": "^1.2.0",
-    "gulp-sass": "^1.2.0",
-    "gulp-strip-css-comments": "^1.0.0",
+    "gulp-rename": "^1.2.2",
     "gulp-uglify": "^1.0.1"
   }
 }
