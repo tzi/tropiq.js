@@ -1,6 +1,6 @@
 {
   "name": "tropiq.js",
-  "main": "tropiq.min.js",
+  "main": "build/tropiq.min.js",
   "version": "1.0.0",
   "homepage": "https://github.com/tzi/tropiq.js",
   "authors": [

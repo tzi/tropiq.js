@@ -6,7 +6,7 @@ gulp.task('uglify', function() {
     gulp.src('tropiq.js')
       .pipe(uglify())
       .pipe(rename('tropiq.min.js'))
-      .pipe(gulp.dest('./'))
+      .pipe(gulp.dest('build'))
 });
 
 gulp.task('default', ['uglify']);

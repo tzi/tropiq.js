@@ -2,7 +2,7 @@
   "name": "tropiq.js",
   "version": "1.0.0",
   "description": "tropiq.js is the jQuery plugin system, without jQuery.",
-  "main": "tropiq.min.js",
+  "main": "build/tropiq.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
