@@ -1,0 +1,23 @@
+{
+  "name": "tropiq.js",
+  "main": "tropiq.min.js",
+  "version": "1.0.0",
+  "homepage": "https://github.com/tzi/tropiq.js",
+  "authors": [
+    "Thomas ZILLIOX <thomas@zilliox.me>"
+  ],
+  "description": "tropiq.js is the jQuery plugin system, without jQuery",
+  "keywords": [
+    "plugin",
+    "vanilla",
+    "jquery"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
