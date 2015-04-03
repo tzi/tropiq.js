@@ -1,12 +1,12 @@
 
-// jTropiq could be used as a function or as a constructor
-function jTropiq( elements ) {
+// tropiq.js could be used as a function or as a constructor
+function tropiq( elements ) {
     // But a function could not return an instantiation of himself without make an infinite loop
-    return new jTropiq.fn.init( elements );
+    return new tropiq.fn.init( elements );
 }
 
-// Definition of the jTropiq object
-jTropiq.fn = jTropiq.prototype = {
+// Definition of the tropiq object
+tropiq.fn = tropiq.prototype = {
     init: function( elements ) {
         this.length = 0;
         if ( elements ) {
@@ -36,11 +36,11 @@ jTropiq.fn = jTropiq.prototype = {
     }
 }
 
-// Simulate that a jTropiq.fn.init object is like a jTropiq object
-jTropiq.fn.constructor = jTropiq;
-jTropiq.fn.init.prototype = jTropiq.fn;
+// Simulate that a tropiq.fn.init object is like a tropiq object
+tropiq.fn.constructor = tropiq;
+tropiq.fn.init.prototype = tropiq.fn;
 
-// jTropiq will become the $ only if it is available
+// tropiq will become the $ only if it is available
 if (!window.$) {
-    window.$ = jTropiq;
+    window.$ = tropiq;
 }
